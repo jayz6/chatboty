@@ -86,7 +86,7 @@ def send():
  
 
 base = Tk()
-base.title("vishnu Chat-App")
+base.title("VISHNU Assistance-Bot")
 base.geometry("400x500")
 base.resizable(width=FALSE, height=FALSE)
 
@@ -106,7 +106,7 @@ SendButton = Button(base, font=("Verdana",12,'bold'), text="Send", width="12", h
 
 #Create the box to enter message
 EntryBox = Text(base, bd=0, bg="white",width="29", height="5", font="Arial")
-#EntryBox.bind("<Return>", send)
+# EntryBox.bind("<Return>", send)
 
 
 #Place all components on the screen

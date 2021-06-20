@@ -1,11 +1,11 @@
 {"intents": [
         {"tag": "greeting",
-                "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day"],
+                "patterns": ["Hi","hii","hi", "How are you", "Is anyone there?", "Hello", "Good day"],
                 "responses": ["Hello, thanks for visiting", "Good to see you again", "Hi there, how can I help?"],
                 "context_set": ""
                },
                {"tag": "goodbye",
-                "patterns": ["Bye", "See you later", "Goodbye"],
+                "patterns": ["Bye", "See you later", "Goodbye","bye"],
                 "responses": ["See you later, thanks for visiting", "Have a nice day", "Bye! Come back again soon."]
                },
                {"tag": "thanks",
@@ -22,30 +22,39 @@
                 "context": [""]
                }, {"tag": "name",
                 "patterns": ["what is your name?","what should I call you?"],
-                "responses": ["I'm Vicky","Hey!I'm Vicky"],
+                "responses": ["I'm Vishnu Assistance-Bot how can i help you","Hey!I'm Vishnu Assistance-Bot please enter your Query"],
                 "context": [""]
                },
-               {"tag": "mopeds",
-                "patterns": ["Which mopeds do you have?", "What kinds of mopeds are there?", "What do you rent?" ],
-                "responses": ["We rent Yamaha, Piaggio and Vespa mopeds", "We have Piaggio, Vespa and Yamaha mopeds"]
+               {"tag": "department",
+                "patterns": ["Which departments do you have?", "What kinds of departments are there?", "What are the departments offered here?"],
+                "responses": ["We have CSE,ECE,IT,MECH,CIVIL,EEE and MBA, MCA.., check this elaboration at http://www.vishnu.edu.in/Departments.php"]
                },
                {"tag": "payments",
-                "patterns": ["Do you take credit cards?", "Do you accept Mastercard?", "Are you cash only?" ],
-                "responses": ["we use cash","We accept VISA, Mastercard and AMEX", "We accept most major credit cards"]
+                "patterns": ["Do you take credit cards?", "Do you accept Mastercard?", "Are you cash only?","pay","payment"],
+                "responses": ["we do cash,online-banking,DD's and our own VishnuPay","We accept VISA, Mastercard and our own VishnuPay,NEFT","We accept most major credit and debitcards and our own VishnuPay"]
                },
                {"tag": "opentoday",
                 "patterns": ["Are you open today?", "When do you open today?", "What are your hours today?"],
-                "responses": ["We're open every day from 9am-9pm", "Our hours are 9am-9pm every day"]
+                "responses": ["We're open every day from 9am-5pm", "Our hours are 9am-5pm every day"]
                },
-               {"tag": "rental",
-                "patterns": ["Can we rent a moped?", "I'd like to rent a moped", "How does this work?" ],
-                "responses": ["Are you looking to rent today or later this week?"],
-                "context_set": "rentalday"
+               {"tag": "eatary",
+                "patterns": ["Can we find a place to eat?", "I'd like to know where canteen is", "where does one eat?" ],
+                "responses": ["there is a canteen at lakeview and enjoy the view!!"],
+                "context_set": "location"
                },
-               {"tag": "today",
-                "patterns": ["today","this day"],
-                "responses": ["For rentals today please call 1-800-MYMOPED", "Same-day rentals please call 1-800-MYMOPED"],
-                "context_filter": "rentalday"
+               {"tag": "admissions",
+                "patterns": ["apply","are admissions avalible?","how many types of admissions"],
+                "responses": ["admissions are open and visit our campus office for further details"],
+                "context_set": "admit"
+               },
+               {"tag": "course",
+                "patterns": ["how many courses do you offer?", "I'd like to know how many courses are offered"],
+                "responses": ["information you are looking for is here http://www.vishnu.edu.in/AdmissionDetails.php"],
+                "context_set": "admit"
+               },{"tag": "library",
+                "patterns": ["where is library?", "do you have a library?", "where students could read?"],
+                "responses": ["we have the biggest library in town with many volumes and located beside the office","we have library at the middle of the campus beside the open garden","library is before the vit office"],
+                "context_set": "location"
                }
    ]
 }
