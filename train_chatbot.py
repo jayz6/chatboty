@@ -75,6 +75,11 @@ training = np.array(training)
 train_x = list(training[:,0])
 train_y = list(training[:,1])
 print("Training data created")
+print(train_x)
+print("/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////");
+
+print(train_y)
+
 
 
 # Create model - 3 layers. First layer 128 neurons, 
@@ -90,9 +95,12 @@ model.add(Dense(len(train_y[0]), activation='softmax'))
 # Compile model. Stochastic gradient descent with Nesterov accelerated gradient gives good results for this model
 sgd = SGD(lr=0.01, decay=1e-6, momentum=0.9, nesterov=True)
 model.compile(loss='categorical_crossentropy', optimizer=sgd, metrics=['accuracy'])
+model.summary()
 
 #fitting and saving the model 
 hist = model.fit(np.array(train_x), np.array(train_y), epochs=200, batch_size=5, verbose=1)
 model.save('chatbot_model.h5', hist)
 
 print("model created")
+
+model.evaluate(np.array(train_x), np.array(train_y))
