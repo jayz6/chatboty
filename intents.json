@@ -9,7 +9,7 @@
                 "responses": ["See you later, thanks for visiting", "Have a nice day", "Bye! Come back again soon."]
                },
                {"tag": "thanks",
-                "patterns": ["Thanks", "Thank you", "That's helpful"],
+                "patterns": ["Thanks", "Thank you", "That's helpful","thanks"],
                 "responses": ["Happy to help!", "Any time!", "My pleasure"]
                },
                {"tag": "hours",
@@ -18,43 +18,125 @@
                },
                {"tag": "noans",
                 "patterns": ["why","how","when","I","you"],
-                "responses": ["Can't Understand Your Question","please elaborate your question"],
+                "responses": ["Can't Understand Your Question","please elaborate your question","Sorry! I did n't get you. Please find all the details regarding our institute in our College website.www.vishnu.edu.in you can see each and every detail here.please Visit again. Thank you..Bye!"],
                 "context": [""]
-               }, {"tag": "name",
-                "patterns": ["what is your name?","what should I call you?"],
+               },
+                {"tag": "name",
+                "patterns": ["what is your name?","how should I call you?"],
                 "responses": ["I'm Vishnu Assistance-Bot how can i help you","Hey!I'm Vishnu Assistance-Bot please enter your Query"],
+                "context": [""]
+               },
+               {"tag": "fee",
+                "patterns": ["what is your college fee structure?","fee","what is the fee structure for your college"],
+                "responses": ["Our College provide Education to common people too with affordable fee structure. Please find the fee details here https://collegedunia.com/college/19203-vishnu-institute-of-technology-vit-bhimavaram/courses-fees"],
                 "context": [""]
                },
                {"tag": "department",
                 "patterns": ["Which departments do you have?", "What kinds of departments are there?", "What are the departments offered here?"],
-                "responses": ["We have CSE,ECE,IT,MECH,CIVIL,EEE and MBA, MCA.., check this elaboration at http://www.vishnu.edu.in/Departments.php"]
+                "responses": ["VISHNU INSTITUTE OF TECHNOLOGY is affiliated to JNTU-Kakinada and offers six courses in Engineering at the undergraduate level which include Electronics and Communication, Electrical and Electronics, Computer Science, Information Technology, Mechanical and Civil streams,check this link for more info http://www.vishnu.edu.in/Departments.php"]
                },
-               {"tag": "payments",
+               {"tag": "payment",
                 "patterns": ["Do you take credit cards?", "Do you accept Mastercard?", "Are you cash only?","pay","payment"],
                 "responses": ["we do cash,online-banking,DD's and our own VishnuPay","We accept VISA, Mastercard and our own VishnuPay,NEFT","We accept most major credit and debitcards and our own VishnuPay"]
                },
-               {"tag": "opentoday",
-                "patterns": ["Are you open today?", "When do you open today?", "What are your hours today?"],
-                "responses": ["We're open every day from 9am-5pm", "Our hours are 9am-5pm every day"]
+               {"tag": "timing",
+                "patterns": ["Are you open today?", "When do you open today?", "What are your hours today?","timing"],
+                "responses": ["We're open every day from 9am-5pm and check this out http://www.vishnu.edu.in/CollegeTimings.php", "Our hours are 9am-5pm weekdays","Monday to Saturday From 9AM To 5PM,Sunday:Holiday,Note:Any special/training classes are conducted the students will be intimated from time to time."]
                },
-               {"tag": "eatary",
-                "patterns": ["Can we find a place to eat?", "I'd like to know where canteen is", "where does one eat?" ],
+               {"tag": "placement",
+                "patterns": [ "Do you bring placements?", "what companies offered placements?","job","job-offer","package"],
+                "responses": ["our highest placement offers and details found in http://www.vishnu.edu.in/placements.php","so far Student Placements : 602 ,check the elaboration at http://www.vishnu.edu.in/placements.php"]
+               },
+               {"tag": "food",
+                "patterns": ["Can we find a place to eat?", "I'd like to know where canteen is", "where does one eat?","foodcourt at?" ],
                 "responses": ["there is a canteen at lakeview and enjoy the view!!"],
                 "context_set": "location"
                },
-               {"tag": "admissions",
-                "patterns": ["apply","are admissions avalible?","how many types of admissions"],
-                "responses": ["admissions are open and visit our campus office for further details"],
+               {"tag": "lakeview",
+                "patterns": [ "where is lakeview?","lakeview","lake view"],
+                "responses": ["you can find lakeview opposite to VIT office,we can have place to roam and enjoy the view of the lake with a floating boat and can also have drinks and snacks at fresh choice"," so far Student Placements : 602 ,check the elaboration at http://www.vishnu.edu.in/placements.php"]
+               },
+               {"tag": "office",
+                "patterns": [ "office", "where is the office?","where can we find vishnu office?"],
+                "responses": ["Go to Vishnu College, You can find Office leftside at the entrance itself!"]
+               },
+               {"tag": "principalcabin",
+                "patterns": [ "where is principal cabin?", "where can we find principal's cabin?"],
+                "responses": ["You can find Principal Sir Cabin opposite to VIT Office room."]
+               },
+               {"tag": "viceprincipal",
+                "patterns": [ "where is vice principal cabin?", "viceprincipal","viceprincipal cabin?"],
+                "responses": ["you can find vice principal cabin next to our VIT office."]
+               },
+                {"tag": "cse",
+                "patterns": [ "where is cse department ?", "cse ","where is computer science department"],
+                "responses": ["You can find CSE Department in the 2nd floor of our College."]
+               },
+               {"tag": "ece",
+                "patterns": [ "where is ece department?", "ece","where is electronics and communication department"],
+                "responses": ["You can find ECE department in the 1st floor of our college."]
+               },
+               {"tag": "it",
+                "patterns": [ "where is ece department?","it","where is information technology department"],
+                "responses": ["You can find IT department in the ground floor  of our college B - Block"]
+               },
+               {"tag": "civil",
+                "patterns": ["where is civil department?","civil","civil engineering department"],
+                "responses": ["You can find Civil and Mechanical departments in the 1st floor  of our college B - Block"]
+               },
+               {"tag": "mech",
+                "patterns": ["where is mech department?","mech","mechanical engineering department"],
+                "responses": ["You can find Civil and Mechanical departments in the 1st floor  of our college B - Block"]
+               },{"tag": "eee",
+                "patterns": ["where is eee department?","eee","electronics and electrical engineering department"],
+                "responses": ["You can find EEE department in the ground floor of our college."]
+               },
+               {"tag": "hostel",
+                "patterns": [ "are there hostels available?","can i find hostel facility?","hostel"],
+                "responses": ["Our college provides hostel for both men and women in the campus itself!,With a key focus on developing a self-sustained residential campus, Hostel facility is provided with separate accommodation for Male and Female students, with fully furnished AC and Non AC (2 bed & 3 bed) rooms having attached bath, balcony and a common Dining Hall."]
+               },
+               {"tag": "parking",
+                "patterns": [ "where is the parking spot?","is parking available?","can i find parking facility?","parking"],
+                "responses": ["You can Park your vehicles behind the college,and you can find abundant parking space near entrances !"]
+               },
+               {"tag": "auditorium",
+                "patterns": [ "where is the auditorium ?","is auditorium available?","is there an auditorium in your college?","auditorium"],
+                "responses": ["We have a mini auditorium near Lake View where we celebrate many functions and have classes and interaction with many cheif guests invited to our college."]
+               },
+               {
+                "tag": "about",
+                "patterns": [ "about college", "about","describe about your college"],
+                "responses": ["Our campuses are multi-dimensional and one-of-its-kind.check our website for more details http://www.vishnu.edu.in/campus.php"]
+               },
+               {"tag": "examcell",
+                "patterns": [ "where is exam cell", "examcell",""],
+                "responses": ["you can find examcell next to our principal sir cabin."]
+               },
+               {"tag": "digitallibrary",
+                "patterns": [ "where is digital library?","dl", "examcell","digital library"],
+                "responses": ["The digital library is equipped with 160 computers with high-speed internet facility and a bandwidth of 60 Mbps.We also provide DL in the top floor of Library block"]
+               },
+               {"tag": "awards",
+                "patterns": [ "what are the awards acheived by the college", "awards and honours","can i know awards and honours acheived by the college?"],
+                "responses": ["we have acheived many benchmarks and you can find more about them at vishnu.edu.in/HonoursnAwards.php"]
+               },{"tag": "ragging",
+                "patterns": [ "what are the consequences of ragging in the college", "is ragging there?","can i know what happens if ragging caught  by the college?"],
+                "responses": ["Ragging in any form is banned inside and outside the campus. Strict action is taken against persons flouting this rule; no leniency is shown. Suspension and/or withdrawal from the hostel/ college is the first action against the offender.please find more details here: http://www.vishnu.edu.in/Anti-Raging.php"]
+               },
+               {"tag": "admission",
+                "patterns": ["apply","are admissions available?","how many types of admissions"],
+                "responses": ["admissions are open and visit our campus office for further details and also check this out for admission procedure http://www.vishnu.edu.in/AdmissionDetails.php#Admission_Procedure"],
                 "context_set": "admit"
                },
                {"tag": "course",
                 "patterns": ["how many courses do you offer?", "I'd like to know how many courses are offered"],
                 "responses": ["information you are looking for is here http://www.vishnu.edu.in/AdmissionDetails.php"],
                 "context_set": "admit"
-               },{"tag": "library",
+               },
+               {"tag": "library",
                 "patterns": ["where is library?", "do you have a library?", "where students could read?"],
-                "responses": ["we have the biggest library in town with many volumes and located beside the office","we have library at the middle of the campus beside the open garden","library is before the vit office"],
-                "context_set": "location"
+                "responses": ["we have library at the middle of the campus infront of the open garden,The Library of Vishnu Institute of Technology was built to keep up International Standards, is located in separate block - a new multi-storied building with carpet area of 1878 sq. meters. with sufficient area for stacks and reading space"],
+                "context_set": ""
                }
    ]
 }
