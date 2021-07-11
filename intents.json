@@ -109,7 +109,7 @@
                 "responses": ["Our campuses are multi-dimensional and one-of-its-kind.check our website for more details http://www.vishnu.edu.in/campus.php"]
                },
                {"tag": "examcell",
-                "patterns": [ "where is exam cell", "examcell",""],
+                "patterns": [ "where is exam cell", "examcell"],
                 "responses": ["you can find examcell next to our principal sir cabin."]
                },
                {"tag": "digitallibrary",
@@ -125,18 +125,45 @@
                },
                {"tag": "admission",
                 "patterns": ["apply","are admissions available?","how many types of admissions"],
-                "responses": ["admissions are open and visit our campus office for further details and also check this out for admission procedure http://www.vishnu.edu.in/AdmissionDetails.php#Admission_Procedure"],
+                "responses": ["Admissions are open and visit our campus office for further details and also check this out for admission procedure http://www.vishnu.edu.in/AdmissionDetails.php#Admission_Procedure"],
                 "context_set": "admit"
                },
                {"tag": "course",
                 "patterns": ["how many courses do you offer?", "I'd like to know how many courses are offered"],
-                "responses": ["information you are looking for is here http://www.vishnu.edu.in/AdmissionDetails.php"],
+                "responses": ["Information you are looking for is here http://www.vishnu.edu.in/AdmissionDetails.php"],
                 "context_set": "admit"
                },
                {"tag": "library",
                 "patterns": ["where is library?", "do you have a library?", "where students could read?"],
                 "responses": ["we have library at the middle of the campus infront of the open garden,The Library of Vishnu Institute of Technology was built to keep up International Standards, is located in separate block - a new multi-storied building with carpet area of 1878 sq. meters. with sufficient area for stacks and reading space"],
                 "context_set": ""
+               },
+               {"tag": "lab",
+                "patterns": ["is lab facility available?","which labs do you have?","what about lab facilities?"],
+                "responses": ["There are wide range of labs with high-end equipment, for every branch college provides individual lab facility!"]
+               },
+               {"tag": "result",
+                "patterns": ["where can we find semester results?","student results","where can we check student results?"],
+                "responses": ["Here is the link for finding results http://14.99.40.109/Results/"]
+               },{
+                "tag":"Bus",
+                "patterns":["could you provide bus facility for students?","is there any bus facility available?","are you providing any transport facility?"],
+                "responses":["Bus facilities are available for nearest destinations upto radius of 30km and can be expanded based on students demand!!"]
+               },
+               {
+                "tag":"faculty",
+                "patterns":["faculty members in your college?","show details about college lecturers?","how good are your college professors","tell me about your teaching staff","teaching staff"],
+                "responses":["We have excellent faculty in teaching as well as monitoring students ,the list of faculty members can be found here http://www.vishnu.edu.in/staff_list.php"]
+               },{
+                "tag":"training",
+                "patterns":["is campus recruitment training offered?","any special trainings available?","how college trains the student for placements?","crt","how crt is taught?"],
+                "responses":["Placement training starts at end of the 2nd year itself and we have excellent placement training team for practice purpose there is a speacial portal to develop there skills."]
+               },
+               {
+                "tag":"scholarship",
+                "patterns":["is scholarship applicable to students?","any scholarships and reimbursement?","fee reimbursement?","details about scholarship?"],
+                "responses":["You can find the scholarship details at http://www.vishnu.edu.in/AdmissionDetails.php"]
                }
+               
    ]
 }
